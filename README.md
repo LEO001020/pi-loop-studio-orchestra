@@ -1,6 +1,38 @@
-# Orchestra
+# `pi-loop-studio/orchestra`
 
-**Pi Loop Studio / Orchestra** 是一个 Windows 原生、证据驱动、可恢复的并行 Pi Agent Loop。项目的规范开源名称为 **`pi-loop-studio/orchestra`**。这是独立实现，不是旧 Pi Web 的换皮或在旧目录继续打补丁。源码复用了已审读的独立 `pi-loop-v2` 参考实现的一部分，再修正其调度、恢复、工具、发布、UI 与安装问题；并非声称所有代码都从零编写。
+**`pi-loop-studio/orchestra`** 是一个 Windows 原生、证据驱动、可恢复的并行 Pi Agent Loop 技术工程。它把多 Agent 软件工程从松散会话提升为可执行的双层状态机：持久化任务图、角色化并发、独立审核、工作树隔离、机械验证、未知副作用治理与单写者发布共同组成一个可审计闭环。
+
+> **技术橱窗入口：** [完整架构与新旧版本对照报告](docs/ARCHITECTURE-COMPARISON.md) · [架构裁决与研究证据](docs/ARCHITECTURE.md) · [机械验证结果](VERIFICATION.md) · [未验证边界](BLOCKED-UNVERIFIED.md) · [性能与外推边界](docs/PERFORMANCE-BOUNDARIES.md)
+
+## 技术全景
+
+```mermaid
+flowchart LR
+    UI[React 19 + Vite\nassistant-ui / React Flow]
+    API[Express 本机 API\nHTTP + durable SSE]
+    ROOT[XState ROOT_GRAPH\n侦查→规划→执行→验证→发布]
+    JOB[XState JOB_GRAPH\n执行→独立审核→宿主整合]
+    PI[PiRuntime\nPrincipal 1 / Executor 20 / Auxiliary 8]
+    TOOLS[受治理工具平面\nShell / Git / Python / MCP]
+    WT[隔离 Git 工作树\n路径所有权 / 冻结候选]
+    DB[(SQLite WAL\nsessions / runs / jobs / calls / effects / events)]
+    PUB[机械验收\n单写者发布]
+
+    UI --> API --> ROOT
+    ROOT --> JOB --> PI --> TOOLS --> WT
+    ROOT --> PI
+    ROOT --> DB
+    JOB --> DB
+    PI --> DB
+    TOOLS --> DB
+    DB --> API --> UI
+    WT --> PUB
+    ROOT --> PUB
+```
+
+完整的组件边界、两级状态机、端到端时序、数据模型、失败恢复语义、测试实证，以及与旧版 `pi-agent-loop` 的逐项比较，见 **[docs/ARCHITECTURE-COMPARISON.md](docs/ARCHITECTURE-COMPARISON.md)**。
+
+这是独立实现，不是旧 Pi Web 的换皮或在旧目录继续打补丁。源码复用了已审读的独立 `pi-loop-v2` 参考实现的一部分，再修正其调度、恢复、工具、发布、UI 与安装问题；并非声称所有代码都从零编写。
 
 ## 开始使用
 

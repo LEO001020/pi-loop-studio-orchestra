@@ -1,0 +1,31 @@
+{
+  "command": [
+    "D:\\Code\\pi-loop-studio\\.runtime\\node-home\\node.exe",
+    "D:\\Code\\pi-loop-studio\\.runtime\\node-home\\node_modules\\npm\\bin\\npm-cli.js",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "D:\\Code\\pi-loop-studio\\workspace\\validator-project-2c2ae471-3ebd-4be0-aecf-659249694710",
+  "started": "2026-09-11T06:30:32.561Z",
+  "ended": "2026-09-11T06:30:33.914Z",
+  "durationMs": 1353,
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "\nadded 1 package in 1s\n",
+  "stderr": "",
+  "stdoutBytes": 23,
+  "stderrBytes": 0,
+  "truncated": false,
+  "timedOut": false,
+  "aborted": false,
+  "encoding": "utf-8",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v24.21.0",
+    "pythonPackageTarget": "D:\\Code\\pi-loop-studio\\workspace\\validator-project-2c2ae471-3ebd-4be0-aecf-659249694710\\.pi-deps",
+    "npmGlobalPrefix": "D:\\Code\\pi-loop-studio\\workspace\\validator-project-2c2ae471-3ebd-4be0-aecf-659249694710\\.pi-npm-prefix"
+  }
+}

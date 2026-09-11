@@ -1,0 +1,415 @@
+{
+  "kind": "FINITE_RELEASE_HARNESS",
+  "started": "2026-09-11T06:29:24.587Z",
+  "command": [
+    "D:\\Code\\pi-loop-studio\\.runtime\\node-home\\node.exe",
+    "D:\\Code\\pi-loop-studio\\scripts\\accept-release-20260911.mjs",
+    "--run",
+    "3230e182-be8d-4815-8e67-e3ab76742564",
+    "--current-run",
+    "808f88b6-9f9c-4425-bdd1-c727a39c25f1"
+  ],
+  "cwd": "D:\\Code\\pi-loop-studio",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "directory": "D:\\Code\\pi-loop-studio\\validation\\acceptance-1789108164580",
+  "runId": "3230e182-be8d-4815-8e67-e3ab76742564",
+  "currentId": "808f88b6-9f9c-4425-bdd1-c727a39c25f1",
+  "steps": [
+    {
+      "name": "build",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 1730,
+      "receipt": "validation/acceptance-1789108164580/build/command.json"
+    },
+    {
+      "name": "regression",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 53507,
+      "receipt": "validation/acceptance-1789108164580/regression/command.json"
+    },
+    {
+      "name": "foundations",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 6553,
+      "receipt": "validation/acceptance-1789108164580/foundations/command.json"
+    },
+    {
+      "name": "dependency-isolation",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 4618,
+      "receipt": "validation/acceptance-1789108164580/dependency-isolation/command.json"
+    },
+    {
+      "name": "launch",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 241,
+      "receipt": "validation/acceptance-1789108164580/launch/command.json"
+    },
+    {
+      "name": "budget-live",
+      "pass": false,
+      "exitCode": 1,
+      "modelCalls": true,
+      "durationMs": 39808,
+      "receipt": "validation/acceptance-1789108164580/budget-live/command.json"
+    },
+    {
+      "name": "ui",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": true,
+      "durationMs": 38805,
+      "receipt": "validation/acceptance-1789108164580/ui/command.json"
+    },
+    {
+      "name": "restart",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 2687,
+      "receipt": "validation/acceptance-1789108164580/restart/command.json"
+    }
+  ],
+  "checks": [
+    {
+      "name": "No active work interrupted by the release harness",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "primary-live: mandatory graph, independent audit and publication",
+      "pass": true,
+      "detail": {
+        "id": "3230e182-be8d-4815-8e67-e3ab76742564",
+        "status": "completed",
+        "created": "2026-09-10T23:15:22.425Z",
+        "updated": "2026-09-11T00:05:33.393Z",
+        "spent": 4205068,
+        "budget": 20000000,
+        "requests": 428,
+        "roles": {
+          "principal": {
+            "calls": 13,
+            "tokens": 396728,
+            "unknown": 0
+          },
+          "executor": {
+            "calls": 286,
+            "tokens": 2621256,
+            "unknown": 0
+          },
+          "auxiliary": {
+            "calls": 129,
+            "tokens": 1187084,
+            "unknown": 0
+          }
+        },
+        "unknown": 0,
+        "executorPeak": 12,
+        "executionOnlyPeak": 11,
+        "jobs": 12,
+        "integrated": 12,
+        "workspace": "D:\\Code\\pi-loop-studio\\workspace\\live-acceptance-1d789289-52ab-4bd6-826f-d91bef2baaca",
+        "publication": "completed",
+        "independentTestSummary": "array throws RangeError (0.5327ms)\n✔ non-array inputs throw TypeError (0.1828ms)\n✔ non-number and non-finite elements throw TypeError (0.223ms)\n✔ sparse arrays with holes throw TypeError (0.2616ms)\n✔ immutability and frozen array support (0.5313ms)\nℹ tests 106\nℹ suites 0\nℹ pass 106\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 402.9924\n"
+      }
+    },
+    {
+      "name": "primary-live: >=10 successful execution dispatch intervals",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "primary-live: reported usage matches ledger and unknowns stay explicit",
+      "pass": true,
+      "detail": {
+        "knownTokens": 4205068,
+        "unknownCalls": 0
+      }
+    },
+    {
+      "name": "primary-live: independent native tests",
+      "pass": true,
+      "detail": {
+        "exitCode": 0,
+        "summary": "array throws RangeError (0.5327ms)\n✔ non-array inputs throw TypeError (0.1828ms)\n✔ non-number and non-finite elements throw TypeError (0.223ms)\n✔ sparse arrays with holes throw TypeError (0.2616ms)\n✔ immutability and frozen array support (0.5313ms)\nℹ tests 106\nℹ suites 0\nℹ pass 106\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 402.9924\n"
+      }
+    },
+    {
+      "name": "final-source-live: mandatory graph, independent audit and publication",
+      "pass": false,
+      "detail": {
+        "id": "808f88b6-9f9c-4425-bdd1-c727a39c25f1",
+        "status": "blocked",
+        "created": "2026-09-11T05:33:30.724Z",
+        "updated": "2026-09-11T06:15:24.505Z",
+        "spent": 8457751,
+        "budget": 30000000,
+        "requests": 610,
+        "roles": {
+          "principal": {
+            "calls": 8,
+            "tokens": 37438,
+            "unknown": 1
+          },
+          "executor": {
+            "calls": 503,
+            "tokens": 8214572,
+            "unknown": 0
+          },
+          "auxiliary": {
+            "calls": 99,
+            "tokens": 205741,
+            "unknown": 50
+          }
+        },
+        "unknown": 51,
+        "executorPeak": 12,
+        "executionOnlyPeak": 0,
+        "jobs": 0,
+        "integrated": 0,
+        "workspace": "D:\\Code\\pi-loop-studio\\workspace\\validator-project-2c2ae471-3ebd-4be0-aecf-659249694710",
+        "independentTestSummary": "t Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: undefined,\n    expected: undefined,\n    operator: 'throws',\n    diff: 'simple'\n  }\n",
+        "originalAcceptanceFilesUnchanged": true,
+        "buildValidation": "Native Node TypeScript erasure + runtime tests; NOT tsc type checking",
+        "generatedArtifacts": []
+      }
+    },
+    {
+      "name": "final-source-live: >=10 successful execution dispatch intervals",
+      "pass": false,
+      "detail": 0
+    },
+    {
+      "name": "final-source-live: reported usage matches ledger and unknowns stay explicit",
+      "pass": true,
+      "detail": {
+        "knownTokens": 8457751,
+        "unknownCalls": 51
+      }
+    },
+    {
+      "name": "final-source-live: independent lockfile installation",
+      "pass": true,
+      "detail": {
+        "exitCode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "final-source-live: independent native tests",
+      "pass": false,
+      "detail": {
+        "exitCode": 1,
+        "summary": "t Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: undefined,\n    expected: undefined,\n    operator: 'throws',\n    diff: 'simple'\n  }\n"
+      }
+    },
+    {
+      "name": "final-source-live: original build, dependency lock and tests unchanged",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "final-source-live: ten actual dependency-using modules",
+      "pass": false,
+      "detail": [
+        "hexColor.ts",
+        "labels.ts",
+        "nonEmptyText.ts",
+        "port.ts",
+        "ratio.ts",
+        "retryCount.ts",
+        "serviceName.ts",
+        "slug.ts",
+        "status.ts",
+        "timeoutMs.ts"
+      ]
+    },
+    {
+      "name": "No production source changed during checks",
+      "pass": true,
+      "detail": {
+        "server/commands.mjs": "5a6dfb4612e8fd4a10ba121d9ccb364aa821c142b0435eeabda510bcbcf90939",
+        "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+        "server/index.mjs": "6dd3362225256b4ad5268f709ba4c0e09ee59d6bc1ce19432435eceb153d419c",
+        "server/node-task-hooks.mjs": "20643ea7bccfd0c88152caf4ac143ce0e032c6338b96fc0f9305e03742d805dd",
+        "server/pi.mjs": "e3c80386870c11ff9af4b30646c62cf197fe78732b1d54d1c3f58d915eece47e",
+        "server/python.mjs": "eae36eb9a8c8af2285b8b06dba11017496cb1aea65f8b7d957fa5ab71f3770b2",
+        "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+        "server/settings.mjs": "10fc8d9d118e1535ceb965aac2d9b87fccbe961ae0cec984cdc6a23e19737d4c",
+        "server/store.mjs": "49e16fdd8e3e9d1c72a6fa457161b219a6a9516a4b7a8420868c1cee9d235526",
+        "server/tools.mjs": "e1f5d85a53f8cb3473a87dc1bb6da90d1847f1b16df0ca00afaba7d5749bd820",
+        "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+        "server/workflow.mjs": "43a74ac309423f7de55fc71ee9ca91ef38d5e0571edd3e84ab6e64ce5082a596",
+        "server/workspace.mjs": "3cb634b4bba0ca718fbf79a521fe47150264ee25a50d0aa8c8caced06bbf5af9",
+        "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+        "ui/App.tsx": "a4e4ab9a8ca02debac1379dfeabcd980211c03f7f1bf7427ac40c287ffb10f8c",
+        "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+        "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+        "ui/Settings.tsx": "92eb7295a2643b12e90daf0a6d0157d0da70cd533ba664304acb7beacbad1918",
+        "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+        "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+        "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+        "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+        "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+        "tests/runtime-boundaries.test.mjs": "4c1d84444e831f8d116100c225b1d37313dfac2e2dcbe17bc365af3cefd9ae7a",
+        "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+        "tests/workflow.test.mjs": "11e29f7ce96880095cbafeb41fcca5942fc20f3316904e5f5c547769d0c9e082"
+      }
+    }
+  ],
+  "status": "BLOCKED_FINAL_ACCEPTANCE",
+  "exitCode": 1,
+  "sourceFilesAtStart": {
+    "server/commands.mjs": "5a6dfb4612e8fd4a10ba121d9ccb364aa821c142b0435eeabda510bcbcf90939",
+    "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+    "server/index.mjs": "6dd3362225256b4ad5268f709ba4c0e09ee59d6bc1ce19432435eceb153d419c",
+    "server/node-task-hooks.mjs": "20643ea7bccfd0c88152caf4ac143ce0e032c6338b96fc0f9305e03742d805dd",
+    "server/pi.mjs": "e3c80386870c11ff9af4b30646c62cf197fe78732b1d54d1c3f58d915eece47e",
+    "server/python.mjs": "eae36eb9a8c8af2285b8b06dba11017496cb1aea65f8b7d957fa5ab71f3770b2",
+    "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+    "server/settings.mjs": "10fc8d9d118e1535ceb965aac2d9b87fccbe961ae0cec984cdc6a23e19737d4c",
+    "server/store.mjs": "49e16fdd8e3e9d1c72a6fa457161b219a6a9516a4b7a8420868c1cee9d235526",
+    "server/tools.mjs": "e1f5d85a53f8cb3473a87dc1bb6da90d1847f1b16df0ca00afaba7d5749bd820",
+    "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+    "server/workflow.mjs": "43a74ac309423f7de55fc71ee9ca91ef38d5e0571edd3e84ab6e64ce5082a596",
+    "server/workspace.mjs": "3cb634b4bba0ca718fbf79a521fe47150264ee25a50d0aa8c8caced06bbf5af9",
+    "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+    "ui/App.tsx": "a4e4ab9a8ca02debac1379dfeabcd980211c03f7f1bf7427ac40c287ffb10f8c",
+    "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+    "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+    "ui/Settings.tsx": "92eb7295a2643b12e90daf0a6d0157d0da70cd533ba664304acb7beacbad1918",
+    "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+    "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+    "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+    "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+    "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+    "tests/runtime-boundaries.test.mjs": "4c1d84444e831f8d116100c225b1d37313dfac2e2dcbe17bc365af3cefd9ae7a",
+    "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+    "tests/workflow.test.mjs": "11e29f7ce96880095cbafeb41fcca5942fc20f3316904e5f5c547769d0c9e082"
+  },
+  "health": {
+    "ok": true,
+    "app": "pi-loop-studio",
+    "version": "2.0.0-candidate.3",
+    "root": "D:\\Code\\pi-loop-studio",
+    "bootId": "17311bbd-d832-4668-9c7a-179240946050",
+    "node": "v24.21.0",
+    "platform": "win32",
+    "at": "2026-09-11T06:30:31.335Z",
+    "port": 3320
+  },
+  "primaryLive": {
+    "id": "3230e182-be8d-4815-8e67-e3ab76742564",
+    "status": "completed",
+    "created": "2026-09-10T23:15:22.425Z",
+    "updated": "2026-09-11T00:05:33.393Z",
+    "spent": 4205068,
+    "budget": 20000000,
+    "requests": 428,
+    "roles": {
+      "principal": {
+        "calls": 13,
+        "tokens": 396728,
+        "unknown": 0
+      },
+      "executor": {
+        "calls": 286,
+        "tokens": 2621256,
+        "unknown": 0
+      },
+      "auxiliary": {
+        "calls": 129,
+        "tokens": 1187084,
+        "unknown": 0
+      }
+    },
+    "unknown": 0,
+    "executorPeak": 12,
+    "executionOnlyPeak": 11,
+    "jobs": 12,
+    "integrated": 12,
+    "workspace": "D:\\Code\\pi-loop-studio\\workspace\\live-acceptance-1d789289-52ab-4bd6-826f-d91bef2baaca",
+    "publication": "completed",
+    "independentTestSummary": "array throws RangeError (0.5327ms)\n✔ non-array inputs throw TypeError (0.1828ms)\n✔ non-number and non-finite elements throw TypeError (0.223ms)\n✔ sparse arrays with holes throw TypeError (0.2616ms)\n✔ immutability and frozen array support (0.5313ms)\nℹ tests 106\nℹ suites 0\nℹ pass 106\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 402.9924\n"
+  },
+  "currentLive": {
+    "id": "808f88b6-9f9c-4425-bdd1-c727a39c25f1",
+    "status": "blocked",
+    "created": "2026-09-11T05:33:30.724Z",
+    "updated": "2026-09-11T06:15:24.505Z",
+    "spent": 8457751,
+    "budget": 30000000,
+    "requests": 610,
+    "roles": {
+      "principal": {
+        "calls": 8,
+        "tokens": 37438,
+        "unknown": 1
+      },
+      "executor": {
+        "calls": 503,
+        "tokens": 8214572,
+        "unknown": 0
+      },
+      "auxiliary": {
+        "calls": 99,
+        "tokens": 205741,
+        "unknown": 50
+      }
+    },
+    "unknown": 51,
+    "executorPeak": 12,
+    "executionOnlyPeak": 0,
+    "jobs": 0,
+    "integrated": 0,
+    "workspace": "D:\\Code\\pi-loop-studio\\workspace\\validator-project-2c2ae471-3ebd-4be0-aecf-659249694710",
+    "independentTestSummary": "t Test.postRun (node:internal/test_runner/test:1542:19)\n      at Test.run (node:internal/test_runner/test:1467:12)\n      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: undefined,\n    expected: undefined,\n    operator: 'throws',\n    diff: 'simple'\n  }\n",
+    "originalAcceptanceFilesUnchanged": true,
+    "buildValidation": "Native Node TypeScript erasure + runtime tests; NOT tsc type checking",
+    "generatedArtifacts": []
+  },
+  "sourceFilesAtEnd": {
+    "server/commands.mjs": "5a6dfb4612e8fd4a10ba121d9ccb364aa821c142b0435eeabda510bcbcf90939",
+    "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+    "server/index.mjs": "6dd3362225256b4ad5268f709ba4c0e09ee59d6bc1ce19432435eceb153d419c",
+    "server/node-task-hooks.mjs": "20643ea7bccfd0c88152caf4ac143ce0e032c6338b96fc0f9305e03742d805dd",
+    "server/pi.mjs": "e3c80386870c11ff9af4b30646c62cf197fe78732b1d54d1c3f58d915eece47e",
+    "server/python.mjs": "eae36eb9a8c8af2285b8b06dba11017496cb1aea65f8b7d957fa5ab71f3770b2",
+    "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+    "server/settings.mjs": "10fc8d9d118e1535ceb965aac2d9b87fccbe961ae0cec984cdc6a23e19737d4c",
+    "server/store.mjs": "49e16fdd8e3e9d1c72a6fa457161b219a6a9516a4b7a8420868c1cee9d235526",
+    "server/tools.mjs": "e1f5d85a53f8cb3473a87dc1bb6da90d1847f1b16df0ca00afaba7d5749bd820",
+    "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+    "server/workflow.mjs": "43a74ac309423f7de55fc71ee9ca91ef38d5e0571edd3e84ab6e64ce5082a596",
+    "server/workspace.mjs": "3cb634b4bba0ca718fbf79a521fe47150264ee25a50d0aa8c8caced06bbf5af9",
+    "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+    "ui/App.tsx": "a4e4ab9a8ca02debac1379dfeabcd980211c03f7f1bf7427ac40c287ffb10f8c",
+    "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+    "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+    "ui/Settings.tsx": "92eb7295a2643b12e90daf0a6d0157d0da70cd533ba664304acb7beacbad1918",
+    "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+    "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+    "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+    "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+    "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+    "tests/runtime-boundaries.test.mjs": "4c1d84444e831f8d116100c225b1d37313dfac2e2dcbe17bc365af3cefd9ae7a",
+    "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+    "tests/workflow.test.mjs": "11e29f7ce96880095cbafeb41fcca5942fc20f3316904e5f5c547769d0c9e082"
+  },
+  "finished": "2026-09-11T06:31:56.364Z"
+}

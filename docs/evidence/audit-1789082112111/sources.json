@@ -1,0 +1,464 @@
+{
+  "started": "2026-09-10T23:15:12.112Z",
+  "command": [
+    "D:\\Code\\pi-loop-studio\\.runtime\\node-home\\node.exe",
+    "D:\\Code\\pi-loop-studio\\scripts\\research-audit.mjs"
+  ],
+  "cwd": "D:\\Code\\pi-loop-studio",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32"
+  },
+  "scope": "Primary repository metadata, official docs, full HTML papers where available, and explicitly labelled abstract-only sources. No replication or exhaustive/global-optimum claim.",
+  "sources": [
+    {
+      "name": "nicobailon--pi-subagents",
+      "url": "https://api.github.com/repos/nicobailon/pi-subagents",
+      "finalUrl": "https://api.github.com/repos/nicobailon/pi-subagents",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 5485,
+      "sha256": "cccc52dd67ed6d6ca7879e4720907d3e9158e8d7b7735f9249f1f90e1203375b",
+      "file": "nicobailon--pi-subagents.txt",
+      "metadata": {
+        "name": "nicobailon/pi-subagents",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T23:06:29Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.115Z",
+      "durationMs": 971
+    },
+    {
+      "name": "earendil-works--pi",
+      "url": "https://api.github.com/repos/earendil-works/pi",
+      "finalUrl": "https://api.github.com/repos/earendil-works/pi",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6307,
+      "sha256": "50ba1f4664a1ea2a34025f8d1e6e9cfe52026ab8c592c4bcc01b07202bb3fede",
+      "file": "earendil-works--pi.txt",
+      "metadata": {
+        "name": "earendil-works/pi",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T23:13:58Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.116Z",
+      "durationMs": 1004
+    },
+    {
+      "name": "assistant-ui--assistant-ui",
+      "url": "https://api.github.com/repos/assistant-ui/assistant-ui",
+      "finalUrl": "https://api.github.com/repos/assistant-ui/assistant-ui",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6742,
+      "sha256": "d50c78285ef18b77f942f95b1cae3d2573e201199eef57cac73bae9043dad4e0",
+      "file": "assistant-ui--assistant-ui.txt",
+      "metadata": {
+        "name": "assistant-ui/assistant-ui",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T22:29:17Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.128Z",
+      "durationMs": 983
+    },
+    {
+      "name": "open-webui--open-webui",
+      "url": "https://api.github.com/repos/open-webui/open-webui",
+      "finalUrl": "https://api.github.com/repos/open-webui/open-webui",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6506,
+      "sha256": "621b754539e10bfff41eeeb3eb7ac625fb8a754dc7335a8a4d2b2bcc4cea0202",
+      "file": "open-webui--open-webui.txt",
+      "metadata": {
+        "name": "open-webui/open-webui",
+        "license": "NOASSERTION",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T23:05:38Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.139Z",
+      "durationMs": 994
+    },
+    {
+      "name": "danny-avila--LibreChat",
+      "url": "https://api.github.com/repos/danny-avila/LibreChat",
+      "finalUrl": "https://api.github.com/repos/danny-avila/LibreChat",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 5879,
+      "sha256": "15d3f9b2b14bc1d1003b0f800f1a06f933b34aab77d349fd594c3c5ad810a6a3",
+      "file": "danny-avila--LibreChat.txt",
+      "metadata": {
+        "name": "danny-avila/LibreChat",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T22:58:52Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.499Z",
+      "durationMs": 360
+    },
+    {
+      "name": "langchain-ai--langgraphjs",
+      "url": "https://api.github.com/repos/langchain-ai/langgraphjs",
+      "finalUrl": "https://api.github.com/repos/langchain-ai/langgraphjs",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6676,
+      "sha256": "9250703226d6c56dcfacc907c8820dad357edf561bdc5375d495506b7da03700",
+      "file": "langchain-ai--langgraphjs.txt",
+      "metadata": {
+        "name": "langchain-ai/langgraphjs",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T20:22:14Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.530Z",
+      "durationMs": 390
+    },
+    {
+      "name": "statelyai--xstate",
+      "url": "https://api.github.com/repos/statelyai/xstate",
+      "finalUrl": "https://api.github.com/repos/statelyai/xstate",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6464,
+      "sha256": "7f82114b072dd47d2481f1178d3b92ab407bdac3ac4ee2c0088e2cf51f6cdea6",
+      "file": "statelyai--xstate.txt",
+      "metadata": {
+        "name": "statelyai/xstate",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T19:36:51Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:13.535Z",
+      "durationMs": 395
+    },
+    {
+      "name": "lobehub--lobe-chat",
+      "url": "https://api.github.com/repos/lobehub/lobe-chat",
+      "finalUrl": "https://api.github.com/repositories/643445235",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6325,
+      "sha256": "cb763d3cd874671a62c19f507a2929369efb8cfad272a0ae8898e011cdfa7447",
+      "file": "lobehub--lobe-chat.txt",
+      "metadata": {
+        "name": "lobehub/lobehub",
+        "license": "NOASSERTION",
+        "defaultBranch": "canary",
+        "archived": false,
+        "pushedAt": "2026-09-10T20:30:04Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:14.417Z",
+      "durationMs": 1279
+    },
+    {
+      "name": "SWE-agent--SWE-agent",
+      "url": "https://api.github.com/repos/SWE-agent/SWE-agent",
+      "finalUrl": "https://api.github.com/repos/SWE-agent/SWE-agent",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6494,
+      "sha256": "b7afc275017acc21ab7f6790c1a63d60e0a579f46551d9d7c2e5c0e9869d4af0",
+      "file": "SWE-agent--SWE-agent.txt",
+      "metadata": {
+        "name": "SWE-agent/SWE-agent",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-07T22:17:28Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:14.790Z",
+      "durationMs": 372
+    },
+    {
+      "name": "OpenAutoCoder--Agentless",
+      "url": "https://api.github.com/repos/OpenAutoCoder/Agentless",
+      "finalUrl": "https://api.github.com/repos/OpenAutoCoder/Agentless",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6612,
+      "sha256": "49fe53102a8ecddc025325e781b40006456a8ee37282bcc0f11d0d33a7aa870e",
+      "file": "OpenAutoCoder--Agentless.txt",
+      "metadata": {
+        "name": "OpenAutoCoder/Agentless",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2024-12-22T19:29:31Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:14.811Z",
+      "durationMs": 393
+    },
+    {
+      "name": "xyflow--xyflow",
+      "url": "https://api.github.com/repos/xyflow/xyflow",
+      "finalUrl": "https://api.github.com/repos/xyflow/xyflow",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6287,
+      "sha256": "bcc6dedb4f31b0dab0088969469111acd68145e89b5e7eb3034383a9f472a63d",
+      "file": "xyflow--xyflow.txt",
+      "metadata": {
+        "name": "xyflow/xyflow",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T15:18:27Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:14.823Z",
+      "durationMs": 405
+    },
+    {
+      "name": "temporalio--sdk-typescript",
+      "url": "https://api.github.com/repos/temporalio/sdk-typescript",
+      "finalUrl": "https://api.github.com/repos/temporalio/sdk-typescript",
+      "scope": "Repository metadata, not a benchmark",
+      "status": 200,
+      "ok": true,
+      "bytes": 6707,
+      "sha256": "2c22c64b4604f7f19e5aa861ba155726e4481690da6bd09254f4af926e37cc21",
+      "file": "temporalio--sdk-typescript.txt",
+      "metadata": {
+        "name": "temporalio/sdk-typescript",
+        "license": "MIT",
+        "defaultBranch": "main",
+        "archived": false,
+        "pushedAt": "2026-09-10T16:49:04Z"
+      },
+      "retrievedAt": "2026-09-10T23:15:14.838Z",
+      "durationMs": 420
+    },
+    {
+      "name": "pi-subagents-readme",
+      "url": "https://raw.githubusercontent.com/nicobailon/pi-subagents/main/README.md",
+      "finalUrl": "https://raw.githubusercontent.com/nicobailon/pi-subagents/main/README.md",
+      "scope": "Upstream explicitly leaves delegation and automatic review to parent instructions",
+      "status": 200,
+      "ok": true,
+      "bytes": 8332,
+      "sha256": "e51e39e945d9903e84e8a36bfdca4ccc68174397d46deca070e7c2eec4325ac7",
+      "file": "pi-subagents-readme.txt",
+      "retrievedAt": "2026-09-10T23:15:15.743Z",
+      "durationMs": 904
+    },
+    {
+      "name": "pi-sdk",
+      "url": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/docs/sdk.md",
+      "finalUrl": "https://raw.githubusercontent.com/earendil-works/pi/main/packages/coding-agent/docs/sdk.md",
+      "scope": "SDK reference; not a substitute for installed-version types",
+      "status": 200,
+      "ok": true,
+      "bytes": 38305,
+      "sha256": "5552225acbc4da1a2d40c00407b2d7d523d006e7fa531d9ee2d4e8021f8e1de3",
+      "file": "pi-sdk.txt",
+      "retrievedAt": "2026-09-10T23:15:15.767Z",
+      "durationMs": 927
+    },
+    {
+      "name": "xstate-persistence",
+      "url": "https://stately.ai/docs/persistence",
+      "finalUrl": "https://stately.ai/docs/persistence",
+      "scope": "Official persistence semantics; installed v5 source is the API authority",
+      "status": 200,
+      "ok": true,
+      "bytes": 237178,
+      "sha256": "00ab353161a40e0b9e512c42075bcc7b518d7212294f343c08c45852688d87d6",
+      "file": "xstate-persistence.txt",
+      "retrievedAt": "2026-09-10T23:15:15.898Z",
+      "durationMs": 1060
+    },
+    {
+      "name": "assistant-ui-external-store",
+      "url": "https://www.assistant-ui.com/docs/runtimes/custom/external-store",
+      "finalUrl": "https://www.assistant-ui.com/docs/runtimes/custom/external-store",
+      "scope": "Official custom-backend UI integration",
+      "status": 200,
+      "ok": true,
+      "bytes": 1095004,
+      "sha256": "4bc5e05da39d72104a982cdb8937b661719cb57a563c165ea8cd0edb085c0596",
+      "file": "assistant-ui-external-store.txt",
+      "retrievedAt": "2026-09-10T23:15:17.047Z",
+      "durationMs": 2208
+    },
+    {
+      "name": "git-worktree",
+      "url": "https://git-scm.com/docs/git-worktree",
+      "finalUrl": "https://git-scm.com/docs/git-worktree",
+      "scope": "Official isolated working-tree mechanism",
+      "status": 200,
+      "ok": true,
+      "bytes": 97870,
+      "sha256": "f00c8c296c55f999cd6a68bb1c15280f7831c171a4d7bb1dc977999983ce500d",
+      "file": "git-worktree.txt",
+      "retrievedAt": "2026-09-10T23:15:17.922Z",
+      "durationMs": 875
+    },
+    {
+      "name": "Agentless",
+      "url": "https://arxiv.org/html/2407.01489v1",
+      "finalUrl": "https://arxiv.org/html/2407.01489v1",
+      "scope": "Agentless: Demystifying LLM-based Software Engineering Agents",
+      "status": 200,
+      "ok": true,
+      "bytes": 224586,
+      "sha256": "0fe45a31ff813b39863c886c34272973392bbc01d73fd5b9ed12fa8a50982f9b",
+      "file": "Agentless.txt",
+      "retrievedAt": "2026-09-10T23:15:18.079Z",
+      "durationMs": 1029
+    },
+    {
+      "name": "scaling-agents",
+      "url": "https://arxiv.org/html/2512.08296v1",
+      "finalUrl": "https://arxiv.org/html/2512.08296v1",
+      "scope": "Towards a Science of Scaling Agent Systems",
+      "status": 200,
+      "ok": true,
+      "bytes": 483834,
+      "sha256": "f15c8f2dfdeec6c4076de3f37adacb050e158f356abbd18966127f94d7b0eff7",
+      "file": "scaling-agents.txt",
+      "retrievedAt": "2026-09-10T23:15:18.182Z",
+      "durationMs": 1132
+    },
+    {
+      "name": "MAST",
+      "url": "https://arxiv.org/html/2503.13657v1",
+      "finalUrl": "https://arxiv.org/html/2503.13657v1",
+      "scope": "Why Do Multi-Agent LLM Systems Fail?",
+      "status": 200,
+      "ok": true,
+      "bytes": 1623173,
+      "sha256": "d01791ff482bfdcef3faa5a7cd8803a7800a578da70a242ae9e34abcce568365",
+      "file": "MAST.txt",
+      "retrievedAt": "2026-09-10T23:15:18.358Z",
+      "durationMs": 1309
+    },
+    {
+      "name": "ReAct",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "finalUrl": "https://arxiv.org/abs/2210.03629",
+      "scope": "Abstract only: reasoning/acting with observations",
+      "status": 200,
+      "ok": true,
+      "bytes": 44231,
+      "sha256": "66a324b6bf6075b6534db3df10867474023791818c05099d5d6e7e776a624d87",
+      "file": "ReAct.txt",
+      "retrievedAt": "2026-09-10T23:15:18.540Z",
+      "durationMs": 181
+    },
+    {
+      "name": "SWE-agent",
+      "url": "https://arxiv.org/html/2405.15793v1",
+      "finalUrl": "https://arxiv.org/html/2405.15793v1",
+      "scope": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "status": 200,
+      "ok": true,
+      "bytes": 270186,
+      "sha256": "d6b7693c95a6f70f0bef1300597c23dbbb6f1d516010bcf91c369ec2871bf180",
+      "file": "SWE-agent.txt",
+      "retrievedAt": "2026-09-10T23:15:18.583Z",
+      "durationMs": 224
+    },
+    {
+      "name": "Reflexion",
+      "url": "https://arxiv.org/abs/2303.11366",
+      "finalUrl": "https://arxiv.org/abs/2303.11366",
+      "scope": "Abstract only: feedback and retry",
+      "status": 200,
+      "ok": true,
+      "bytes": 43184,
+      "sha256": "b218d29df0a0b750337cbaddef0568f0c9fc209590e8a2e9bbf92b7269a27059",
+      "file": "Reflexion.txt",
+      "retrievedAt": "2026-09-10T23:15:19.127Z",
+      "durationMs": 768
+    },
+    {
+      "name": "Self-Refine",
+      "url": "https://arxiv.org/abs/2303.17651",
+      "finalUrl": "https://arxiv.org/abs/2303.17651",
+      "scope": "Abstract only: iterative refinement, not independent verification",
+      "status": 200,
+      "ok": true,
+      "bytes": 44110,
+      "sha256": "626360a4c312ff51d381308d03fcbb8c931912f90b6956f9843fb185e5f1100f",
+      "file": "Self-Refine.txt",
+      "retrievedAt": "2026-09-10T23:15:19.143Z",
+      "durationMs": 784
+    },
+    {
+      "name": "Agent-Workflow-Memory",
+      "url": "https://arxiv.org/abs/2409.07429",
+      "finalUrl": "https://arxiv.org/abs/2409.07429",
+      "scope": "Abstract only: workflow reuse, not an exactly-once persistence guarantee",
+      "status": 200,
+      "ok": true,
+      "bytes": 41063,
+      "sha256": "8eda9861ea083957e31f654a929000e61eea91f5a00e43def23772c970362a22",
+      "file": "Agent-Workflow-Memory.txt",
+      "retrievedAt": "2026-09-10T23:15:19.295Z",
+      "durationMs": 152
+    }
+  ],
+  "installedAPI": [
+    {
+      "path": "@earendil-works/pi-agent-core/dist/agent.d.ts",
+      "file": "installed-@earendil-works--pi-agent-core--dist--agent.d.ts",
+      "bytes": 6611,
+      "sha256": "7caf774e58b6ceab9e4629bde58b9ab332a30278142af5a3e99b316be26030a9"
+    },
+    {
+      "path": "@earendil-works/pi-agent-core/dist/agent-loop.js",
+      "file": "installed-@earendil-works--pi-agent-core--dist--agent-loop.js",
+      "bytes": 22932,
+      "sha256": "6732a1c65c09577d2ffcb716b48e4f4673e57e3e333f10ebfce5132d82e4d7a2"
+    },
+    {
+      "path": "@earendil-works/pi-coding-agent/dist/core/compaction/compaction.d.ts",
+      "file": "installed-@earendil-works--pi-coding-agent--dist--core--compaction--compaction.d.ts",
+      "bytes": 7730,
+      "sha256": "ef1dd1abc3b222046b6a8f1e7eba88e554de2ad839c669822ae44727bc9952eb"
+    },
+    {
+      "path": "@earendil-works/pi-coding-agent/dist/core/tools/powershell.d.ts",
+      "file": "installed-@earendil-works--pi-coding-agent--dist--core--tools--powershell.d.ts",
+      "bytes": 1227,
+      "sha256": "eb2bfa4574b0bdb02a95e4a3039ea585503d20ba608a3cdb6309bf8b63cc6a4c"
+    },
+    {
+      "path": "@assistant-ui/react/package.json",
+      "file": "installed-@assistant-ui--react--package.json",
+      "bytes": 2435,
+      "sha256": "2e7ce24d4718af17b60ea7e7bfb4e896f7e8251c67a2548b226fbf50f175b4b1"
+    },
+    {
+      "path": "xstate/package.json",
+      "file": "installed-xstate--package.json",
+      "bytes": 4498,
+      "sha256": "c16d0a180328a683920a7f0621e79f03ae33fbf1bcf9ba806f5579cb8ab46980"
+    }
+  ],
+  "finished": "2026-09-10T23:15:19.301Z",
+  "exitCode": 0
+}

@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "roots": [
+    "server",
+    "ui",
+    "public",
+    "desktop",
+    "scripts",
+    "tests",
+    "vendor",
+    "dist",
+    "node_modules",
+    ".runtime/node-home",
+    ".runtime/python-home",
+    ".runtime/git",
+    ".python",
+    "docs"
+  ],
+  "rootFiles": [
+    "package.json",
+    "package-lock.json",
+    "config.example.json",
+    "credentials.example.json",
+    "requirements.lock",
+    "tsconfig.json",
+    "vite.config.ts",
+    "index.html",
+    "AGENTS.md",
+    "README.md",
+    "LICENSE",
+    "THIRD-PARTY.md",
+    "VERIFICATION.md",
+    "BLOCKED-UNVERIFIED.md",
+    ".gitignore",
+    "Install Pi Loop Studio.cmd",
+    "Open Pi Loop Studio.cmd",
+    "Stop Pi Loop Studio.cmd",
+    "MANIFEST-SCOPE.json",
+    ".runtime/downloads/MinGit-2.55.0.5-64-bit.zip"
+  ],
+  "excludedDirectories": [
+    "__pycache__",
+    ".cache",
+    ".vite",
+    ".git"
+  ],
+  "excludedSuffixes": [
+    ".pyc",
+    ".ttf",
+    ".otf",
+    ".woff",
+    ".woff2",
+    ".eot"
+  ],
+  "excludedPrivateRoots": [
+    ".local",
+    "workspace",
+    "validation",
+    "release"
+  ],
+  "meaning": "SHA256 integrity is not a digital signature or a proof of functional correctness. The local private configured directory may contain .local; distributable archives never do.",
+  "optionalAssets": "Playwright recorder/trace-viewer icon fonts are omitted. Headless browser automation and the application UI do not need them.",
+  "relocation": "Before installation use --verify. Installation regenerates Python entrypoints and paths; afterward --verify --installed reports those exceptions explicitly and checks the remainder."
+}

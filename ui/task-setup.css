@@ -1,0 +1,8 @@
+.archive-toggle{display:flex;align-items:center;gap:7px;margin:0 8px 12px;font-size:11px;color:var(--muted)}
+.archive-toggle input{width:13px;height:13px;margin:0}
+.task-setup{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:0 4px 10px;color:var(--text-muted,#899c96);font-size:11px}
+.task-setup label{display:flex;align-items:center;gap:7px;min-width:0}
+.task-setup input,.task-setup select{border:1px solid var(--border,#263b34);background:var(--surface,#13231d);color:var(--text,#dce6e1);border-radius:7px;padding:5px 7px;font:inherit;max-width:220px}
+.task-setup input{width:95px}.task-setup small{font-size:10px}.composer-input:disabled{opacity:.65;cursor:progress}
+[data-theme=light] .task-setup input,[data-theme=light] .task-setup select{background:#fff;color:#223b30;border-color:#d0ddd5}
+@media(max-width:600px){.task-setup{gap:6px;font-size:10px}.task-setup select{max-width:165px}.task-setup input{width:80px}}

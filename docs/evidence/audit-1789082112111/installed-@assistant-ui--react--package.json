@@ -1,0 +1,114 @@
+{
+  "name": "@assistant-ui/react",
+  "version": "0.15.18",
+  "description": "Open-source TypeScript/React library for building production-grade AI chat experiences",
+  "keywords": [
+    "ai",
+    "ui",
+    "sdk",
+    "mcp",
+    "agent",
+    "agentic",
+    "generative",
+    "components",
+    "assistant",
+    "chat",
+    "chatbot",
+    "shadcn",
+    "radix-ui",
+    "tailwind",
+    "javascript",
+    "openai",
+    "anthropic",
+    "claude",
+    "xai",
+    "chatgpt",
+    "gemini",
+    "grok",
+    "react",
+    "framework",
+    "nextjs",
+    "web",
+    "server",
+    "node",
+    "front-end",
+    "backend",
+    "cli",
+    "vercel"
+  ],
+  "author": "AgentbaseAI Inc.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "internal",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@assistant-ui/core": "^0.3.17",
+    "@assistant-ui/store": "^0.3.12",
+    "@assistant-ui/tap": "^0.9.16",
+    "assistant-cloud": "^0.1.43",
+    "assistant-stream": "^0.3.41",
+    "radix-ui": "^1.6.7",
+    "react-textarea-autosize": "^8.5.9",
+    "safe-content-frame": "^0.0.29",
+    "zod": "^4.5.4",
+    "zustand": "^5.0.15"
+  },
+  "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@assistant-ui/vite": "0.0.16",
+    "@assistant-ui/x-buildutils": "0.0.25",
+    "@testing-library/react": "^16.3.3",
+    "@types/json-schema": "^7.0.15",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "jsdom": "^30.0.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "vitest": "^4.1.11"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "homepage": "https://www.assistant-ui.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assistant-ui/assistant-ui.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/assistant-ui/assistant-ui/issues"
+  },
+  "scripts": {
+    "build": "aui-build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}

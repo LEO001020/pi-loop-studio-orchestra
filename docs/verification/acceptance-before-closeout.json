@@ -1,0 +1,370 @@
+{
+  "kind": "FINITE_RELEASE_HARNESS",
+  "started": "2026-09-11T03:22:46.399Z",
+  "command": [
+    "D:\\Code\\pi-loop-studio\\.runtime\\node-home\\node.exe",
+    "D:\\Code\\pi-loop-studio\\scripts\\accept-release-20260911.mjs",
+    "--run",
+    "3230e182-be8d-4815-8e67-e3ab76742564"
+  ],
+  "cwd": "D:\\Code\\pi-loop-studio",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "directory": "D:\\Code\\pi-loop-studio\\validation\\acceptance-1789096966393",
+  "runId": "3230e182-be8d-4815-8e67-e3ab76742564",
+  "currentId": "ab1edf8e-1b9f-4945-8344-b395eee83c5e",
+  "steps": [
+    {
+      "name": "build",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 1459,
+      "receipt": "validation/acceptance-1789096966393/build/command.json"
+    },
+    {
+      "name": "regression",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 35008,
+      "receipt": "validation/acceptance-1789096966393/regression/command.json"
+    },
+    {
+      "name": "foundations",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 6644,
+      "receipt": "validation/acceptance-1789096966393/foundations/command.json"
+    },
+    {
+      "name": "dependency-isolation",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 4660,
+      "receipt": "validation/acceptance-1789096966393/dependency-isolation/command.json"
+    },
+    {
+      "name": "launch",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 236,
+      "receipt": "validation/acceptance-1789096966393/launch/command.json"
+    },
+    {
+      "name": "budget-live",
+      "pass": false,
+      "exitCode": 1,
+      "modelCalls": true,
+      "durationMs": 53036,
+      "receipt": "validation/acceptance-1789096966393/budget-live/command.json"
+    },
+    {
+      "name": "ui",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": true,
+      "durationMs": 43953,
+      "receipt": "validation/acceptance-1789096966393/ui/command.json"
+    },
+    {
+      "name": "restart",
+      "pass": true,
+      "exitCode": 0,
+      "modelCalls": false,
+      "durationMs": 2808,
+      "receipt": "validation/acceptance-1789096966393/restart/command.json"
+    }
+  ],
+  "checks": [
+    {
+      "name": "No active work interrupted by the release harness",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "primary-live: mandatory graph, independent audit and publication",
+      "pass": true,
+      "detail": {
+        "id": "3230e182-be8d-4815-8e67-e3ab76742564",
+        "status": "completed",
+        "created": "2026-09-10T23:15:22.425Z",
+        "updated": "2026-09-11T00:05:33.393Z",
+        "spent": 4205068,
+        "budget": 20000000,
+        "requests": 428,
+        "roles": {
+          "principal": {
+            "calls": 13,
+            "tokens": 396728,
+            "unknown": 0
+          },
+          "executor": {
+            "calls": 286,
+            "tokens": 2621256,
+            "unknown": 0
+          },
+          "auxiliary": {
+            "calls": 129,
+            "tokens": 1187084,
+            "unknown": 0
+          }
+        },
+        "unknown": 0,
+        "executorPeak": 12,
+        "executionOnlyPeak": 11,
+        "jobs": 12,
+        "integrated": 12,
+        "workspace": "D:\\Code\\pi-loop-studio\\workspace\\live-acceptance-1d789289-52ab-4bd6-826f-d91bef2baaca",
+        "publication": "completed"
+      }
+    },
+    {
+      "name": "primary-live: >=10 successful execution dispatch intervals",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "primary-live: reported usage matches ledger and unknowns stay explicit",
+      "pass": true,
+      "detail": {
+        "knownTokens": 4205068,
+        "unknownCalls": 0
+      }
+    },
+    {
+      "name": "primary-live: independent native tests",
+      "pass": true,
+      "detail": {
+        "exitCode": 0,
+        "summary": "n-finite elements throw TypeError (0.194ms)\n✔ sparse arrays with holes throw TypeError (0.1924ms)\n✔ immutability and frozen array support (0.4332ms)\nℹ tests 106\nℹ suites 0\nℹ pass 106\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 359.0288\n"
+      }
+    },
+    {
+      "name": "final-source-live: mandatory graph, independent audit and publication",
+      "pass": true,
+      "detail": {
+        "id": "ab1edf8e-1b9f-4945-8344-b395eee83c5e",
+        "status": "completed",
+        "created": "2026-09-11T01:36:16.999Z",
+        "updated": "2026-09-11T02:52:18.347Z",
+        "spent": 4728237,
+        "budget": 5000000,
+        "requests": 482,
+        "roles": {
+          "principal": {
+            "calls": 22,
+            "tokens": 639787,
+            "unknown": 2
+          },
+          "executor": {
+            "calls": 340,
+            "tokens": 3324968,
+            "unknown": 0
+          },
+          "auxiliary": {
+            "calls": 120,
+            "tokens": 763482,
+            "unknown": 6
+          }
+        },
+        "unknown": 8,
+        "executorPeak": 12,
+        "executionOnlyPeak": 11,
+        "jobs": 12,
+        "integrated": 12,
+        "workspace": "D:\\Code\\pi-loop-studio\\workspace\\text-contracts-ecefef10-2b4e-4b8c-a459-0bf1eaa4d0e4",
+        "publication": "completed"
+      }
+    },
+    {
+      "name": "final-source-live: >=10 successful execution dispatch intervals",
+      "pass": true,
+      "detail": 11
+    },
+    {
+      "name": "final-source-live: reported usage matches ledger and unknowns stay explicit",
+      "pass": true,
+      "detail": {
+        "knownTokens": 4728237,
+        "unknownCalls": 8
+      }
+    },
+    {
+      "name": "final-source-live: independent native tests",
+      "pass": true,
+      "detail": {
+        "exitCode": 0,
+        "summary": "haracters with spaces (0.0997ms)\n✔ trimAscii preserves non-ASCII whitespace (0.0652ms)\n✔ trimAscii throws TypeError for invalid input types (0.5382ms)\nℹ tests 85\nℹ suites 0\nℹ pass 85\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 321.6457\n"
+      }
+    },
+    {
+      "name": "No production source changed during checks",
+      "pass": true,
+      "detail": {
+        "server/commands.mjs": "834a6854480605383fa32ccad8cf7dd74ac18179fc1f5bc6bdc8d25322ffbc9d",
+        "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+        "server/index.mjs": "67d697aba9d25a2d1ab1820c7a5411ec82edbabb5d0fcbe4b60f9a8e7e5a2b0f",
+        "server/pi.mjs": "63302e4fb31e00cb5813a256688f4b6c71803f7c72ef79289e2a991a6b65bafe",
+        "server/python.mjs": "64f094069fc5b5da2b4bcc6996a9ca22c54f9619a8049532841622a61eaa427f",
+        "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+        "server/settings.mjs": "d7bca1ba0d7515a9a49225425df8f116df41ac1fbd83f0126ce5a1427a912336",
+        "server/store.mjs": "849ae2c372069a8f1e4b0b76cefd2134d9016fda48e5ab7c8387b157f95a17d9",
+        "server/tools.mjs": "a068b28e34bb22b9f832ad3dd691faa778670034c9030ede2812d6aed85d6351",
+        "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+        "server/workflow.mjs": "2e6600ef31fa9f29b128f1daf8d1a22155208fed8659a6fc501044e15af799d5",
+        "server/workspace.mjs": "f52d80520db60920c3e920c506930bc13732d7f3130a3685c39f967ef5ab48de",
+        "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+        "ui/App.tsx": "57e2a28fc96074f933c852ab69983861e16535671966a6e1309685e2ad31d431",
+        "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+        "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+        "ui/Settings.tsx": "c7ec1a966e191c96044f2e005e6310fb7a1fc54a841ad3890a6629d1a73bd96a",
+        "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+        "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+        "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+        "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+        "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+        "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+        "tests/workflow.test.mjs": "23bf5d8537d545ec317adfe0dbc8e6a2b21a990a70b96c737c801c743672d020"
+      }
+    }
+  ],
+  "status": "BLOCKED_FINAL_ACCEPTANCE",
+  "exitCode": 1,
+  "sourceFilesAtStart": {
+    "server/commands.mjs": "834a6854480605383fa32ccad8cf7dd74ac18179fc1f5bc6bdc8d25322ffbc9d",
+    "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+    "server/index.mjs": "67d697aba9d25a2d1ab1820c7a5411ec82edbabb5d0fcbe4b60f9a8e7e5a2b0f",
+    "server/pi.mjs": "63302e4fb31e00cb5813a256688f4b6c71803f7c72ef79289e2a991a6b65bafe",
+    "server/python.mjs": "64f094069fc5b5da2b4bcc6996a9ca22c54f9619a8049532841622a61eaa427f",
+    "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+    "server/settings.mjs": "d7bca1ba0d7515a9a49225425df8f116df41ac1fbd83f0126ce5a1427a912336",
+    "server/store.mjs": "849ae2c372069a8f1e4b0b76cefd2134d9016fda48e5ab7c8387b157f95a17d9",
+    "server/tools.mjs": "a068b28e34bb22b9f832ad3dd691faa778670034c9030ede2812d6aed85d6351",
+    "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+    "server/workflow.mjs": "2e6600ef31fa9f29b128f1daf8d1a22155208fed8659a6fc501044e15af799d5",
+    "server/workspace.mjs": "f52d80520db60920c3e920c506930bc13732d7f3130a3685c39f967ef5ab48de",
+    "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+    "ui/App.tsx": "57e2a28fc96074f933c852ab69983861e16535671966a6e1309685e2ad31d431",
+    "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+    "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+    "ui/Settings.tsx": "c7ec1a966e191c96044f2e005e6310fb7a1fc54a841ad3890a6629d1a73bd96a",
+    "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+    "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+    "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+    "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+    "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+    "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+    "tests/workflow.test.mjs": "23bf5d8537d545ec317adfe0dbc8e6a2b21a990a70b96c737c801c743672d020"
+  },
+  "health": {
+    "ok": true,
+    "app": "pi-loop-studio",
+    "version": "2.0.0-candidate.2",
+    "root": "D:\\Code\\pi-loop-studio",
+    "bootId": "99de4567-90dc-49ef-b299-1ace46d5fe0a",
+    "node": "v24.21.0",
+    "platform": "win32",
+    "at": "2026-09-11T03:23:34.494Z",
+    "port": 3320
+  },
+  "primaryLive": {
+    "id": "3230e182-be8d-4815-8e67-e3ab76742564",
+    "status": "completed",
+    "created": "2026-09-10T23:15:22.425Z",
+    "updated": "2026-09-11T00:05:33.393Z",
+    "spent": 4205068,
+    "budget": 20000000,
+    "requests": 428,
+    "roles": {
+      "principal": {
+        "calls": 13,
+        "tokens": 396728,
+        "unknown": 0
+      },
+      "executor": {
+        "calls": 286,
+        "tokens": 2621256,
+        "unknown": 0
+      },
+      "auxiliary": {
+        "calls": 129,
+        "tokens": 1187084,
+        "unknown": 0
+      }
+    },
+    "unknown": 0,
+    "executorPeak": 12,
+    "executionOnlyPeak": 11,
+    "jobs": 12,
+    "integrated": 12,
+    "workspace": "D:\\Code\\pi-loop-studio\\workspace\\live-acceptance-1d789289-52ab-4bd6-826f-d91bef2baaca",
+    "publication": "completed"
+  },
+  "currentLive": {
+    "id": "ab1edf8e-1b9f-4945-8344-b395eee83c5e",
+    "status": "completed",
+    "created": "2026-09-11T01:36:16.999Z",
+    "updated": "2026-09-11T02:52:18.347Z",
+    "spent": 4728237,
+    "budget": 5000000,
+    "requests": 482,
+    "roles": {
+      "principal": {
+        "calls": 22,
+        "tokens": 639787,
+        "unknown": 2
+      },
+      "executor": {
+        "calls": 340,
+        "tokens": 3324968,
+        "unknown": 0
+      },
+      "auxiliary": {
+        "calls": 120,
+        "tokens": 763482,
+        "unknown": 6
+      }
+    },
+    "unknown": 8,
+    "executorPeak": 12,
+    "executionOnlyPeak": 11,
+    "jobs": 12,
+    "integrated": 12,
+    "workspace": "D:\\Code\\pi-loop-studio\\workspace\\text-contracts-ecefef10-2b4e-4b8c-a459-0bf1eaa4d0e4",
+    "publication": "completed"
+  },
+  "sourceFilesAtEnd": {
+    "server/commands.mjs": "834a6854480605383fa32ccad8cf7dd74ac18179fc1f5bc6bdc8d25322ffbc9d",
+    "server/context.mjs": "2c009cb819c6e83ba117181e7750f66612f3dce911feee7b6e3766ee3e2fa565",
+    "server/index.mjs": "67d697aba9d25a2d1ab1820c7a5411ec82edbabb5d0fcbe4b60f9a8e7e5a2b0f",
+    "server/pi.mjs": "63302e4fb31e00cb5813a256688f4b6c71803f7c72ef79289e2a991a6b65bafe",
+    "server/python.mjs": "64f094069fc5b5da2b4bcc6996a9ca22c54f9619a8049532841622a61eaa427f",
+    "server/research.mjs": "676bc73fe89cc0962cdec32227bfecfc7b2005dee3af16a05f2a2f806acb34a8",
+    "server/settings.mjs": "d7bca1ba0d7515a9a49225425df8f116df41ac1fbd83f0126ce5a1427a912336",
+    "server/store.mjs": "849ae2c372069a8f1e4b0b76cefd2134d9016fda48e5ab7c8387b157f95a17d9",
+    "server/tools.mjs": "a068b28e34bb22b9f832ad3dd691faa778670034c9030ede2812d6aed85d6351",
+    "server/util.mjs": "8e342f30940fa6f4658d2419c08763dd86205b3529fc072f70cd9c91b6c643e5",
+    "server/workflow.mjs": "2e6600ef31fa9f29b128f1daf8d1a22155208fed8659a6fc501044e15af799d5",
+    "server/workspace.mjs": "f52d80520db60920c3e920c506930bc13732d7f3130a3685c39f967ef5ab48de",
+    "ui/api.ts": "3889af23b69cae7f50add5b9d2758309042439c3655af2df974bb07739fc3a64",
+    "ui/App.tsx": "57e2a28fc96074f933c852ab69983861e16535671966a6e1309685e2ad31d431",
+    "ui/Graph.tsx": "d074bd23f3ec1c9262f9f0cbe85307da9ae34a2f44d44da3221671d0b96f025f",
+    "ui/main.tsx": "ac533ed05dfd392ecf6afc98b0d46e3990c0a5a6d7b37ac97c16675a95f16b3c",
+    "ui/Settings.tsx": "c7ec1a966e191c96044f2e005e6310fb7a1fc54a841ad3890a6629d1a73bd96a",
+    "ui/style.css": "355df5d555f7267dec1933377347045279e60e158dcfaea79c3211828ba25fa0",
+    "ui/task-setup.css": "57fe672e152f6adc31d36afe09335dc2fa4a03c9c594aa7bf9b2167cc30a0a3b",
+    "ui/theme.css": "ab6c16ba157e706b8e5e319ab0440a32a691245b898ed339b19a16cda936e049",
+    "tests/core.test.mjs": "1cbcb4bddf354a759ac3ee27e254c4feb273c8710c4631bb5bdf40361aa4c0e8",
+    "tests/http.test.mjs": "bea7e2a588329305ce6656bf2c6462d7d9633b632c2a58ed066e13c4d3e28f48",
+    "tests/transport.test.mjs": "153fe48bee92e2d72f727a5929db36c3f4e88886d6284ec7170939bb1fca2ff1",
+    "tests/workflow.test.mjs": "23bf5d8537d545ec317adfe0dbc8e6a2b21a990a70b96c737c801c743672d020"
+  },
+  "finished": "2026-09-11T03:25:15.698Z"
+}

@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "port": 3320,
+  "budgetTokens": 30000000,
+  "models": {
+    "principal": { "model": "your-principal-model", "api": "openai-responses", "thinking": "high", "maxOutputTokens": 128000, "contextWindow": 800000, "concurrency": 1, "baseUrl": "https://api.example.com/v1", "requestTimeoutSeconds": 600 },
+    "executor": { "model": "your-executor-model", "api": "openai-completions", "thinking": "max", "maxOutputTokens": 64000, "contextWindow": 1000000, "concurrency": 12, "baseUrl": "http://127.0.0.1:8045/v1", "requestTimeoutSeconds": 600 },
+    "auxiliary": { "model": "your-auxiliary-model", "api": "openai-responses", "thinking": "xhigh", "maxOutputTokens": 128000, "contextWindow": 800000, "concurrency": 4, "baseUrl": "https://api.example.com/v1", "requestTimeoutSeconds": 600 }
+  },
+  "roots": [{ "alias": "projects", "path": "D:\\Projects" }],
+  "defaultWorkspace": "workspace",
+  "roles": [{ "name": "执行者", "count": 12, "instructions": "完成分配的实现、调查或测试；先获取证据，仅修改分配路径，独立运行检查，明确未知。" }],
+  "presets": [{ "id": "general-12", "name": "通用执行 · 12 + 4", "executor": 12, "auxiliary": 4, "roles": [{ "name": "执行者", "count": 12, "instructions": "完成分配的实现、调查或测试；先获取证据，仅修改分配路径，独立运行检查，明确未知。" }] }],
+  "activePreset": "general-12",
+  "maxRepairRounds": 2,
+  "maxAgentTurns": 40,
+  "commandTimeoutSeconds": 180,
+  "pythonStartupSeconds": 90,
+  "pythonCellTimeoutSeconds": 180,
+  "snapshotMaxMiB": 1024,
+  "snapshotMaxFiles": 60000,
+  "excludeDirectories": [".git", "node_modules", ".venv", "venv", "__pycache__", ".next", ".local", ".runtime", ".python"],
+  "verificationCommands": [],
+  "generatedDirectories": ["dist", "build", "coverage", ".pytest_cache", ".mypy_cache", ".ruff_cache"],
+  "research": { "enabled": true, "searchUrl": "https://www.google.com/search?q={query}", "mcpUrl": "https://mcp.exa.ai/mcp", "maxSourceBytes": 5242880, "fetchTimeoutSeconds": 45 },
+  "theme": "dark",
+  "autoResume": true
+}

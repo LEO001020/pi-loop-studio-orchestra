@@ -56,7 +56,16 @@ export function checkedPath(root,value,{write=false,ownedPaths=[]}={}){
   return {full,rel};
 }
 export function validatePlan(value,settings){
-  if(!Array.isArray(value.tasks)||!value.tasks.length)throw new LoopError('EMPTY_PLAN','任务计划不能为空');
+  // Validate independently of tool-parameter schemas before malformed strings
+  // can be treated as lists of tasks, dependencies or verification commands.
+  const stringList=v=>Array.isArray(v)&&v.every(x=>typeof x==='string');
+  if(!value||typeof value.summary!=='string'||!Array.isArray(value.tasks)||
+    !stringList(value.successCriteria)||!stringList(value.verificationCommands)||
+    value.tasks.some(t=>!t||typeof t.id!=='string'||typeof t.title!=='string'||
+      typeof t.role!=='string'||typeof t.instructions!=='string'||
+      !stringList(t.dependsOn)||!stringList(t.ownedPaths)||!stringList(t.acceptance)))
+    throw new LoopError('INVALID_PLAN_SHAPE','计划字段类型不符合结构化提交契约');
+  if(!value.tasks.length)throw new LoopError('EMPTY_PLAN','任务计划不能为空');
   if(value.tasks.length>200)throw new LoopError('PLAN_TOO_LARGE','每轮计划最多 200 个有边界的任务');
   const ids=new Set(value.tasks.map(t=>t.id));
   if(new Set(value.tasks.map(t=>t.id.toLowerCase())).size!==value.tasks.length||value.tasks.some(t=>!/^[-\w]{1,60}$/.test(t.id)))throw new LoopError('INVALID_TASK_ID','Windows 任务 ID 必须忽略大小写后仍唯一，且只含字母、数字、横线、下划线');
